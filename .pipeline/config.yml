@@ -32,11 +32,20 @@ stages:
 #      - alias: 'mySystemAlias'
 #        credentialId: 'mySystemCredentialsId'
 
-#  Release:
-#    cfTargets:
-#      - org: 'myOrg'
-#        space: 'mySpace'
-#        apiEndpoint: 'https://'
-#        appName: 'myAppName'
-#        manifest: 'manifest.yml'
-#        credentialsId: 'myDeploymentCredentialsId'
+Release:
+  cfTargets:
+    - org: '3449c0bbtrial_trial-dev-bkip0wnv'
+      space: 'Dev-Space'
+      apiEndpoint: 'https://api.cf.us10-001.hana.ondemand.com'
+      appName: 'zcaptest2'
+      manifest: 'manifest.yml'
+      credentialsId: 'deploytocf'
+
+Acceptance:
+  cfTargets:
+    - org: '3449c0bbtrial_trial-dev-bkip0wnv'
+      space: 'Dev-Space'
+      apiEndpoint: 'https://api.cf.us10-001.hana.ondemand.com'
+      appName: 'zcaptest2'
+      manifest: 'manifest.yml'
+      credentialsId: 'deploytocf'
