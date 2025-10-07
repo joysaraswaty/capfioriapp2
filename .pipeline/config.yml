@@ -40,6 +40,8 @@ Release:
       appName: 'zcaptest2'
       manifest: 'manifest.yml'
       credentialsId: 'deploytocf'
+      tmsUpload:  true
+
 
 # Acceptance:
 #   cfTargets:
