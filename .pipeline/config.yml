@@ -49,3 +49,8 @@ Acceptance:
       appName: 'zcaptest2'
       manifest: 'manifest.yml'
       credentialsId: 'deploytocf'
+      tmsUpload:  true
+
+tmsUpload:
+  nodename: "MTA_DEV"
+  credentialsId: "CTMS-KEY"
