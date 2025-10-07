@@ -41,15 +41,15 @@ Release:
       manifest: 'manifest.yml'
       credentialsId: 'deploytocf'
 
-Acceptance:
-  cfTargets:
-    - org: '3449c0bbtrial_trial-dev-bkip0wnv'
-      space: 'Dev-Space'
-      apiEndpoint: 'https://api.cf.us10-001.hana.ondemand.com'
-      appName: 'zcaptest2'
-      manifest: 'manifest.yml'
-      credentialsId: 'deploytocf'
-      tmsUpload:  true
+# Acceptance:
+#   cfTargets:
+#     - org: '3449c0bbtrial_trial-dev-bkip0wnv'
+#       space: 'Dev-Space'
+#       apiEndpoint: 'https://api.cf.us10-001.hana.ondemand.com'
+#       appName: 'zcaptest2'
+#       manifest: 'manifest.yml'
+#       credentialsId: 'deploytocf'
+#       tmsUpload:  true
 
 tmsUpload:
   nodename: "MTA_DEV"
