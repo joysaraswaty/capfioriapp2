@@ -92,7 +92,7 @@ resources:
       xsappname: zcaptest2-${org}-${space}
     path: ./xs-security.json
     service: xsuaa
-    service-plan: application
+    service-plan: space
     skipIfExists: true
   requires:
   - name: app-api
