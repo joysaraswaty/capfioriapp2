@@ -93,8 +93,8 @@ resources:
     path: ./xs-security.json
     service: xsuaa
     service-plan: application
-  # requires:
-  # - name: app-api
+  requires:
+  - name: app-api
 - name: zcaptest2-db
   type: com.sap.xs.hdi-container
   parameters:
