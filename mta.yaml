@@ -93,6 +93,7 @@ resources:
     path: ./xs-security.json
     service: xsuaa
     service-plan: application
+    skipIfExists: true
   requires:
   - name: app-api
 - name: zcaptest2-db
@@ -100,16 +101,19 @@ resources:
   parameters:
     service: hana
     service-plan: hdi-shared
+    skipIfExists: true
 - name: zcaptest2-html5-repo-host
   type: org.cloudfoundry.managed-service
   parameters:
     service: html5-apps-repo
     service-plan: app-host
+    skipIfExists: true
 - name: zcaptest2-html5-runtime
   type: org.cloudfoundry.managed-service
   parameters:
     service: html5-apps-repo
     service-plan: app-runtime
+    skipIfExists: true
 - name: zcaptest2-destination-service
   type: org.cloudfoundry.managed-service
   parameters:
